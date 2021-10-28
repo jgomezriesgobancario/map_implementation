@@ -7,8 +7,8 @@ import {Tile as TileLayer, Vector as VectorLayer} from 'ol/layer';
 import {useGeographic} from 'ol/proj';
 
 useGeographic();
-
-const place = [-110, 45];
+//Para hacer cambios en la ubicación solo hay que cambiar la ubicación.
+const place = [-69.93855751772563,18.481367130149952];
 
 const point = new Point(place);
 
@@ -16,7 +16,7 @@ const map = new Map({
   target: 'map',
   view: new View({
     center: place,
-    zoom: 8,
+    zoom: 18,
   }),
   layers: [
     new TileLayer({
